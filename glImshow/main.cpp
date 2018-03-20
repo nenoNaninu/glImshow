@@ -5,7 +5,7 @@ void display();
 void keyboard(unsigned char key, int x, int y);
 void mainLoop();
 
-cv::VideoCapture capture(0);
+cv::VideoCapture capture(2);
 
 int main(int argc, char *argv[])
 {
