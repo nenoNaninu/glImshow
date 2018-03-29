@@ -10,8 +10,8 @@ VideoCapture使うならmain.cppの中にあるdisplay,ketbord,mainLoopの関数
 プログラマブルなカメラ使うならmain()の最初にカメラの初期化とかそういうこと書くと幸せになれるでしょう(たぶん)。
 
 ## 外部ライブラリ
-OpenCV3.4.0
-freeglut3.1.0
+OpenCV3.4.0  
+freeglut3.1.0  
 
 dll(so?)をビルドしておいてリンクさせるとよいでしょう。
 
