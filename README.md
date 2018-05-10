@@ -11,9 +11,9 @@ VideoCapture使うならmain.cppの中にあるdisplay,ketbord,mainLoopの関数
 
 ## 外部ライブラリ
 OpenCV3.4.0  
-freeglut3.1.0  
+freeglut3.0.0  
 
-dll(so?)をビルドしておいてリンクさせるとよいでしょう。
+dllをビルドしておいてリンクさせるとよいでしょう。
 
 ## 環境
 windows10 1709で動作は確認。
