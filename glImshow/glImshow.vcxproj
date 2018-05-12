@@ -104,12 +104,12 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Libraries\openCV3.4.1\opencv\build\include;C:\Libraries\freegult3.1.0\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Libraries\openCV3.4.1\opencv\build\include;C:\Libraries\freegult3.0.0\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Libraries\openCV3.4.1\opencv\build\x64\vc15\lib;C:\Libraries\freegult3.1.0\lib\Debug</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Libraries\openCV3.4.1\opencv\build\x64\vc15\lib;C:\Libraries\freegult3.0.0\lib\Debug</AdditionalLibraryDirectories>
       <AdditionalDependencies>opencv_world341d.lib;freeglutd.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
