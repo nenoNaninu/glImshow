@@ -10,10 +10,10 @@ cv::VideoCapture capture(0);
 
 int main(int argc, char *argv[])
 {
-	glImshowInit(argc, argv, capture.get(CV_CAP_PROP_FRAME_WIDTH), capture.get(CV_CAP_PROP_FRAME_HEIGHT), "glImshow", GLUT_RGB);
-	glImshowSetFunc(display, keyboard, mainLoop,mousePressed);
-	glImshowStart();
-	return 0;
+    glImshowInit(argc, argv, capture.get(CV_CAP_PROP_FRAME_WIDTH), capture.get(CV_CAP_PROP_FRAME_HEIGHT), "glImshow", GLUT_RGB);
+    glImshowSetFunc(display, keyboard, mainLoop, mousePressed);
+    glImshowStart();
+    return 0;
 }
 
 void display()
@@ -23,25 +23,25 @@ void display()
 
 void keyboard(unsigned char key, int x, int y)
 {
-	switch (key)
-	{
-	case 'q':
-	case 'Q':
-	case '\033':
-		glutLeaveMainLoop();
-	default:
-		break;
-	}
+    switch (key)
+    {
+    case 'q':
+    case 'Q':
+    case '\033':
+        glutLeaveMainLoop();
+    default:
+        break;
+    }
 }
 
 void mainLoop()
 {
-	cv::Mat mat;
-	capture >> mat;
-	glImshow(mat, CV_BGR2RGB, GL_RGB);
+    cv::Mat mat;
+    capture >> mat;
+    glImshow(mat, CV_BGR2RGB, GL_RGB);
 }
 
 void mousePressed(int button, int state, int x, int y)
 {
-	std::cout << x << " " << y << std::endl;
+    std::cout << x << " " << y << std::endl;
 }
