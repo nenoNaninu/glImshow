@@ -10,7 +10,7 @@ cv::VideoCapture capture(0);
 
 int main(int argc, char *argv[])
 {
-    glImshowInit(argc, argv, capture.get(CV_CAP_PROP_FRAME_WIDTH), capture.get(CV_CAP_PROP_FRAME_HEIGHT), "glImshow", GLUT_RGB);
+    glImshowInit(argc, argv, capture.get(CV_CAP_PROP_FRAME_WIDTH), capture.get(CV_CAP_PROP_FRAME_HEIGHT), "glImshow", GLUT_RGB, 60);
     glImshowSetFunc(display, keyboard, mainLoop, mousePressed);
     glImshowStart();
     return 0;
